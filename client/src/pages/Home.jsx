@@ -7,9 +7,11 @@ import Footer from '../components/common/Footer'
 import Stats from '../components/HomePage/Stats'
 
 const Home = () => {
+    console.log("inside home")
     return (
         <div className='!scroll-smooth'>
             <HeroBanner />
+            {console.log("inside home")}
             <TrustedPartners />
             <Features />
             <Pricing />

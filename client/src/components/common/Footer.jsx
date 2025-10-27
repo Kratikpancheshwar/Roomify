@@ -58,13 +58,14 @@ const Footer = () => {
                                     rel="noopener noreferrer"
                                     className='text-gray-500 font-medium cursor-pointer hover:text-black text-lg md:text-xl transition-colors'
                                 >
-                                    {social.icon}
+                                 {social.icon}
                                 </a>
                             ))
                         }
                     </div>
                 </div>
             </div>
+         
         </div>
     )
 }

@@ -12,7 +12,7 @@ const {
 export const login = (data, navigate) => {
     return async (dispatch) => {
         dispatch(setLoading(true));
-        const toastId = toast.loading("Loading...");
+        const toastId = toast.loading("Loading... shubham");
         try {
             const response = await apiConnector('POST', LOGIN_API, data);
             console.log("RESPONSE FROM LOGIN API....", response.data);
@@ -81,13 +81,14 @@ export const sendOTP = (data, navigate) => {
         dispatch(setLoading(true));
         const toastId = toast.loading('loading...');
         try {
+            console.log("siuei");
             const response = await apiConnector('POST', SENDOTP_API, { email: data });
             console.log("RESPONSE FROM SEND_OTP API....", response.data);
             if (!response.data.success) {
                 throw new Error(response.data.message);
             }
             toast.success(response.data.message);
-            console.log("OTP SENT SUCCESSFULLY....", response.data.message);
+           // console.log("OTP SENT SUCCESSFULLY....", response.data.message);
             navigate('/verify-via-otp');
         } catch (error) {
             console.log("ERROR OCCURRED AT SEND OTP API...", error);

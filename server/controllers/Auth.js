@@ -128,6 +128,7 @@ const signup = async(req, res) => {
 
 const login = async(req, res) => {
     try {
+        console.log(req.body);
         const { email, password } = req.body;
         if(!email || !password) {
             return res.status(401).json({

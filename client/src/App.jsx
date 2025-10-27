@@ -17,12 +17,14 @@ import ErrorPage from './pages/ErrorPage.jsx';
 function App() {
   const agoraClient = useRTCClient(AgoraRTC.createClient({ codec: "vp8", mode: "rtc" }));
   agoraClient.previewOrigin = window.location.origin;
+  console.log("inside app");
   return (
     <StrictMode>
       <AgoraRTCProvider client={agoraClient}>
         <AnimationWrapper>
           <Routes>
             {/* Routes that need the NavBar */}
+          
             <Route element={<Layout />}>
               <Route path='/' element={<Home />} />
               <Route path='/meeting' element={<MettingPage />} />

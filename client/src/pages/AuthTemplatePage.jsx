@@ -91,6 +91,7 @@ const AuthTemplatePage = () => {
                     </div>
                 </div>
             </div>
+          
         </div>
     );
 }

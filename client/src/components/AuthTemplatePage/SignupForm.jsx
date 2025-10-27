@@ -23,6 +23,7 @@ const SignupForm = ({ setPageState }) => {
 
     // Change handler for input fields
     const changeHandler = (e) => {
+        console.log(e);
         const { name, value } = e.target;
         setFormData((prev) => ({
             ...prev,
@@ -33,6 +34,7 @@ const SignupForm = ({ setPageState }) => {
     // Submit handler
     const submitHandler = (e) => {
         e.preventDefault();
+        console.log("start");
         dispatch(setSignUpData(formData));
         dispatch(sendOTP(formData.email, navigate));
     };

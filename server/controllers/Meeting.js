@@ -155,7 +155,7 @@ const fetchMessages = async(req, res) => {
                     path: 'user',
                 }
             });
-
+                console.log("visible");
         const responseObject = messages.map((obj) => {return obj.messages} );
         res.status(200).json({
             success: true,

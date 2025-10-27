@@ -33,7 +33,7 @@ io.use(socketAuth);
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/meeting', meetingRoutes);
-
+console.log("op");
 io.on('connection', (socket) => {
     console.log('Client connected:', socket.id);
     socket.on('connect', () => {
@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
 })
 
 server.listen(PORT, () => {
-    console.log(`Server is running on PORT ${PORT}`);
+    console.log(`Server is  on PORT ${PORT}`);
     dbConnect();
 })
 

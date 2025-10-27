@@ -1,4 +1,5 @@
 # Roomify
+
 ## Live Preview: [Roomify - https://roomify-eight.vercel.app/](https://roomify-eight.vercel.app/)
 
 ## Overview
@@ -16,12 +17,14 @@ Roomify is a modern room management and collaboration platform that enables user
 ## Tech Stack
 
 ### Frontend
+
 - React
 - Tailwind CSS
 - WebSocket Client
 - Agora RTC SDK
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -33,6 +36,7 @@ Roomify is a modern room management and collaboration platform that enables user
 ### Prerequisites
 
 Make sure you have the following installed:
+
 - Node.js (v14 or higher)
 - npm or yarn
 - MongoDB
@@ -40,12 +44,14 @@ Make sure you have the following installed:
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/ShubhamBhowmik11/Chater
 cd Chater
 ```
 
 2. Install dependencies for both client and server:
+
 ```bash
 # Install client dependencies
 cd client
@@ -57,6 +63,7 @@ npm install
 ```
 
 3. Create a `.env` file in the server directory with the following variables:
+
 ```
 PORT = 8000
 DATABASE_URL = your_database_uri (MongoDB URI)
@@ -70,6 +77,7 @@ CLIENT_URL = your_client_url (Client URL)
 ```
 
 4. Create a `.env` file in the client directory with the following variables:
+
 ```
 VITE_APP_BASE_URL=your_base_url
 VITE_APP_AGORA_APP_ID=your_app_id (Agora App ID)
@@ -77,12 +85,14 @@ VITE_APP_SOCKET_IO_URL=your_socket_io_url
 ```
 
 5. Start the backend server:
+
 ```bash
 cd server
 npm run dev
 ```
 
 6. Start the frontend client:
+
 ```bash
 cd client
 npm run dev
@@ -131,6 +141,6 @@ Contributions are welcome! Please follow these steps:
 
 If you have any questions or suggestions, please feel free to reach out:
 
-- GitHub Issues: [Create an issue](https://github.com/Shubham Bhowmik11/Chater)
-- Email: shubhambhowmik106325@gmail.com
-- LinkedIn: [Shubham Bhowmik](https://www.linkedin.com/in/bhowmik11)
+- GitHub Issues: [Create an issue](https://github.com/Kratikpancheshwar/Roomify)
+- Email: kratikpancheshwar580@gmail.com
+- LinkedIn: [Kratik Pancheshwar](https://www.linkedin.com/in/kratik-pancheshwar-814862280/)

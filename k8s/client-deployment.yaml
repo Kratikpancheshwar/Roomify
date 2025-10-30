@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: roomify-client
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: roomify-client
+  template:
+    metadata:
+      labels:
+        app: roomify-client
+    spec:
+      containers:
+      - name: roomify-client
+        image: roomify-client:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: roomify-client-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: roomify-client
+  ports:
+    - port: 80
+      targetPort: 3000
